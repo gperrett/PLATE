@@ -1,5 +1,6 @@
 library(baseballr)
 library(dplyr)
+library(readr)
 
 major_dat <- list()
 triple_a_dat <- list()
