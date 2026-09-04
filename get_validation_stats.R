@@ -1,4 +1,5 @@
 library(baseballr)
+library(tidyverse)
 # load in mlb stats from baseballr
 mlb_pitching_stats <- mlb_stats(
   stat_type = "season", 
