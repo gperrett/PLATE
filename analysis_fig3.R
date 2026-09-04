@@ -1,5 +1,5 @@
 library(tidyverse)
-
+library(latex2exp)
 Crochet <- read_rds('data/Crochet.rds')[[1]]
 Abbott <- read_rds('data/Abbott.rds')[[1]]
 Ohtani <- read_rds('data/Ohtani.rds')[[1]]

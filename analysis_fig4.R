@@ -1,4 +1,5 @@
 library(tidyverse)
+library(latex2exp)
 
 source('get_pitching_stats.R') # get 2025 pitching stats 
 # note get_pitching_stats.R also gathers PLATE estimates and joins them with conventional stats
