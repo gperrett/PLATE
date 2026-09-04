@@ -17,3 +17,14 @@ quick_workflow.R uses saved game data and saved output from from model.R and val
 If you are only interested in reproducing a single figure/section of the analysis. Each analysis* script can be run independently and will produce the corresponding figure in the paper. 
 
 Figure 1 is generated in latex and summarizes the PLATE model, thus there is no included code here. 
+
+## R packages
+`tidyverse 2.0.0`
+`rstan 2.39.0.9000`
+`ggrepel 0.9.6`
+`archive 1.1.14`
+`baseballr 1.6.0`
+`latex2exp 0.9.8`
+
+## Stan Version
+To run `model.R` or `validate.R` you must use Stan version 2.39.0 or greater
