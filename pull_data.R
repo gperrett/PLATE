@@ -1,6 +1,7 @@
 library(baseballr)
 library(dplyr)
 library(readr)
+library(archive) # for writing zip files
 
 major_dat <- list()
 triple_a_dat <- list()
@@ -89,4 +90,6 @@ for (i in 1:iter) {
 pitch_dat <- do.call('rbind', pitch_list)
 rm(tripple_a_dat);rm(major_dat);rm(season);rm(game_pks)
 rm(i);rm(pct);rm(s);rm(features);rm(checkpoints); rm(iter)
-readr::write_csv(pitch_dat, 'all_data_2025.csv')
+# output is saved to all_data_2025.csv.zip
+readr::write_csv(pitch_dat, 'data/all_data_2025.csv.zip')
+rm(list = ls())

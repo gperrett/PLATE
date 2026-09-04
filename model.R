@@ -152,6 +152,6 @@ beta_so <- apply(as_tibble(as.matrix(fit, pars = paste0('beta_so[', 1:nrow(batte
 beta_m <- apply(as_tibble(as.matrix(fit, pars = paste0('beta_m[', 1:nrow(batter_map), ']'))), 2, mean)
 readr::write_rds(beta_so, "beta_node1.rds")
 readr::write_rds(beta_m, 'beta_node2.rds')
-
+rm(list = ls())
 
 

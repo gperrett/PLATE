@@ -141,3 +141,5 @@ ggsave('validate.pdf', width = 10, height = 4.7)
 # compute medians for write up
 median(callup_theta$innings_pitched)
 median(callup_theta$games_pitched)
+rm(list = ls())
+

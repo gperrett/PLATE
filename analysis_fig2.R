@@ -85,3 +85,6 @@ p3 <- ggplot(data = war_plt, aes(theta, WAR)) +
        subtitle = paste0('r = ', round(cor(war_plt$WAR, war_plt$theta, method = 'spearman'), 2))) + 
   theme_bw()
 p3
+
+rm(list = ls())
+

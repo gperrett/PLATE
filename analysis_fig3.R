@@ -23,4 +23,5 @@ rbind(
   theme_bw()
 
 ggsave('compare.pdf', height = 3, width = 6)
+rm(list = ls())
 

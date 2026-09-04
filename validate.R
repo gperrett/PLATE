@@ -123,4 +123,5 @@ validation_theta_mean <- apply(validation_post, 2, mean)
 validation_theta_q10 <- apply(validation_post, 2, function(i) quantile(i, .1))
 readr::write_rds(validation_theta_mean, 'validation_theta_mean.rds')
 readr::write_rds(validation_theta_q10, 'validation_theta_10.rds')
+rm(list = ls())
 

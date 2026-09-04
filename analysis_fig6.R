@@ -51,4 +51,5 @@ ggplot(aes(beta_node1, beta_node2, label = matchup.batter.fullName)) +
   theme_bw()
 
 ggsave('batters.pdf', width = 10, height = 4)
+rm(list = ls())
 

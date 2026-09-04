@@ -40,4 +40,5 @@ ggplot(data = stat_plt, aes(theta, value)) +
 
 
 ggsave('stats.pdf', width = 10, height = 4.7)
+rm(list = ls())
 
