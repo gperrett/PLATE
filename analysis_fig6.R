@@ -1,11 +1,11 @@
 library(tidyverse)
 
 # load in batter strength params of interest
-beta_node1 <- readr::read_rds('beta_node1.rds')
-beta_node2 <- readr::read_rds('beta_node2.rds')
+beta_node1 <- readr::read_rds('data/beta_node1.rds')
+beta_node2 <- readr::read_rds('data/beta_node2.rds')
 
 # read in every plate appearance from 2025 mlb and aaa and get batter map to link params to names
-pitch_dat <- readr::read_csv('all_data_2025.csv')
+pitch_dat <- readr::read_csv('data/all_data_2025.csv.zip')
 
 # here is our map for battes
 batter_map <- pitch_dat |>

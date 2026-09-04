@@ -4,10 +4,10 @@ library(lubridate)
 ## see model_validate.R for the estimation of these parameters
 ## fitting the validation model will take ~ 12-14 hours
 ## relevant parameters were written to rds files and can be loaded in
-validation_theta_mean <- readr::read_rds('validation_theta_mean.rds')
-validation_theta_q10 <- readr::read_rds('validation_theta_10.rds')
+validation_theta_mean <- readr::read_rds('data/validation_theta_mean.rds')
+validation_theta_q10 <- readr::read_rds('data/validation_theta_10.rds')
 ## load in pitch data so we can link PLATE to pitchers and get conventional pitching stats
-pitch_dat <- readr::read_csv('all_data_2025.csv')
+pitch_dat <- readr::read_csv('data/all_data_2025.csv.zip')
 
 # validation data
 pre_september_dat <- pitch_dat |>
@@ -66,7 +66,7 @@ callup_theta <- pre_september_dat |>
   filter(matchup.pitcher.fullName %in% called_up)
 
 # gather conventional pitching stats for the major league. 
-source('get_mlb_pitching_stats.R')
+source('get_validation_stats.R')
 
 # outcomes
 callup_theta <- callup_theta |>

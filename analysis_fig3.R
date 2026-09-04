@@ -1,9 +1,9 @@
 library(tidyverse)
 
-Crochet <- read_rds('Crochet.rds')[[1]]
-Abbott <- read_rds('Abbott.rds')[[1]]
-Ohtani <- read_rds('Ohtani.rds')[[1]]
-Tong <- read_rds('Tong.rds')[[1]]
+Crochet <- read_rds('data/Crochet.rds')[[1]]
+Abbott <- read_rds('data/Abbott.rds')[[1]]
+Ohtani <- read_rds('data/Ohtani.rds')[[1]]
+Tong <- read_rds('data/Tong.rds')[[1]]
 
 
 rbind(
