@@ -1,7 +1,7 @@
 library(tidyverse)
 library(rstan)
 
-# read in every plate appearacne from 2025 mlb and aaa
+# read in every plate appearance from 2025 mlb and aaa
 pitch_dat <- readr::read_csv('all_data_2025.csv')
 
 # Assign node outcomes
@@ -126,7 +126,7 @@ write_rds(fit, 'light_model_all_2025.rds')
 pars <- paste0('theta[', 1:nrow(pitcher_map), ']')
 post <- as_tibble(as.matrix(fit, pars = pars))
 theta <- apply(post, 2, mean)
-theta_q10 <- apply(post, 2, function(i) quantile(.1))
+theta_q10 <- apply(post, 2, function(i) quantile(i, .1))
 readr::write_rds(theta, 'theta_mean.rds')
 readr::write_rds(theta_q10, 'theta_q10.rds')
 
@@ -144,7 +144,7 @@ pitcher_map |>
 Crochet <- post[,43]; readr::write_rds(Crochet, 'Crochet.rds')
 Abbott <- post[,452]; readr::write_rds(Abbott, 'Abbott.rds')
 Ohtani <- post[,697]; readr::write_rds(Ohtani, 'Ohtani.rds')
-Tong <- post[,823]; readr::write_rds(Tong, 'Tong.rds')
+Tong <- post[,832]; readr::write_rds(Tong, 'Tong.rds')
 
 
 # extract batter pars for fig 6
