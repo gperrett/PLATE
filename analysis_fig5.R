@@ -136,7 +136,7 @@ results |>
        y = 'Performance in major league') + 
   theme(legend.position = 'bottom')
 
-ggsave('validate.pdf', width = 10, height = 4.7)
+ggsave('fig5.pdf', width = 10, height = 4.7)
 
 # compute medians for write up
 median(callup_theta$innings_pitched)

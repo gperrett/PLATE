@@ -61,7 +61,7 @@ p2 <- p2 + theme(legend.position = 'none',axis.text.y = element_blank(), axis.ti
 p2 <- p2 + labs(title = NULL, subtitle = NULL, y = NULL)
 
 p1 + p2
-ggsave('fig1.pdf', width = 10, height = 5.8)
+ggsave('fig2.pdf', width = 10, height = 5.8)
 
 
 # what happens if we only concider starting pitcher workloads? 

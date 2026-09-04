@@ -22,6 +22,6 @@ rbind(
   facet_wrap(~pitcher, ncol = 2) + 
   theme_bw()
 
-ggsave('compare.pdf', height = 3, width = 6)
+ggsave('fig3.pdf', height = 3, width = 6)
 rm(list = ls())
 

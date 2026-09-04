@@ -39,6 +39,6 @@ ggplot(data = stat_plt, aes(theta, value)) +
   theme(legend.position = 'bottom')
 
 
-ggsave('stats.pdf', width = 10, height = 4.7)
+ggsave('fig4.pdf', width = 10, height = 4.7)
 rm(list = ls())
 

@@ -1,0 +1,8 @@
+source('pull_data.R')
+source('model.R')
+source('analysis_fig2.R', print.eval = TRUE)
+source('analysis_fig3.R', print.eval = TRUE)
+source('analysis_fig4.R', print.eval = TRUE)
+source('validate.R')
+source('analysis_fig5.R', print.eval = TRUE)
+source('analysis_fig6.R', print.eval = TRUE)

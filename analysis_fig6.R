@@ -1,4 +1,5 @@
 library(tidyverse)
+library(ggrepel)
 
 # load in batter strength params of interest
 beta_node1 <- readr::read_rds('data/beta_node1.rds')
@@ -50,6 +51,7 @@ ggplot(aes(beta_node1, beta_node2, label = matchup.batter.fullName)) +
        y = 'Batter Strength (On Base|No Strike Out)') + 
   theme_bw()
 
-ggsave('batters.pdf', width = 10, height = 4)
+
+ggsave('fig6.pdf', width = 10, height = 4)
 rm(list = ls())
 
